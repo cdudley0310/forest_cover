@@ -1,5 +1,0 @@
-"0","as_tibble(invoke(cbind, map(cov, summary)), rownames = "" "")
-"
-"2","Error in as_tibble(invoke(cbind, map(cov, summary)), rownames = "" "") : 
-  could not find function ""as_tibble""
-"

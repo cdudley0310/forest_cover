@@ -1,3 +1,0 @@
-"0","as_tibble(invoke(rbind, map(cov, summary)), rownames = ' ') %>% "
-"0","  kable('latex', booktabs = TRUE, longtable = TRUE, linesep = '') %>% "
-"0","  kable_styling(latex_options = c('striped', 'hold_position'))"
