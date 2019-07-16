@@ -1,0 +1,4 @@
+"0","# skimr settings to reduce unnecessary summary statistics and fit to page width"
+"0","skim_with(numeric = list(complete = NULL,"
+"0","                         n = NULL,"
+"0","                         missing = NULL))"

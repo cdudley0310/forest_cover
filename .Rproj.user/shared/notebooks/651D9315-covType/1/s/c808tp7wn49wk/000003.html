@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="lib/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+
+</head>
+<body style="background-color:white;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th>   </th>
+   <th> Min. </th>
+   <th> 1st Qu. </th>
+   <th> Median </th>
+   <th> Mean </th>
+   <th> 3rd Qu. </th>
+   <th> Max. </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td> Elevation </td>
+   <td> 1859 </td>
+   <td> 2809 </td>
+   <td> 2996 </td>
+   <td> 2959.3653005 </td>
+   <td> 3163 </td>
+   <td> 3858 </td>
+  </tr>
+  <tr>
+   <td> Aspect </td>
+   <td> 0 </td>
+   <td> 58 </td>
+   <td> 127 </td>
+   <td> 155.6568074 </td>
+   <td> 260 </td>
+   <td> 360 </td>
+  </tr>
+  <tr>
+   <td> Slope </td>
+   <td> 0 </td>
+   <td> 9 </td>
+   <td> 13 </td>
+   <td> 14.1037035 </td>
+   <td> 18 </td>
+   <td> 66 </td>
+  </tr>
+  <tr>
+   <td> Horizontal_Distance_To_Hydrology </td>
+   <td> 0 </td>
+   <td> 108 </td>
+   <td> 218 </td>
+   <td> 269.4282166 </td>
+   <td> 384 </td>
+   <td> 1397 </td>
+  </tr>
+  <tr>
+   <td> Vertical_Distance_To_Hydrology </td>
+   <td> -173 </td>
+   <td> 7 </td>
+   <td> 30 </td>
+   <td> 46.4188554 </td>
+   <td> 69 </td>
+   <td> 601 </td>
+  </tr>
+  <tr>
+   <td> Horizontal_Distance_To_Roadways </td>
+   <td> 0 </td>
+   <td> 1106 </td>
+   <td> 1997 </td>
+   <td> 2350.1466114 </td>
+   <td> 3328 </td>
+   <td> 7117 </td>
+  </tr>
+  <tr>
+   <td> Hillshade_9am </td>
+   <td> 0 </td>
+   <td> 198 </td>
+   <td> 218 </td>
+   <td> 212.1460486 </td>
+   <td> 231 </td>
+   <td> 254 </td>
+  </tr>
+  <tr>
+   <td> Hillshade_Noon </td>
+   <td> 0 </td>
+   <td> 213 </td>
+   <td> 226 </td>
+   <td> 223.3187163 </td>
+   <td> 237 </td>
+   <td> 254 </td>
+  </tr>
+  <tr>
+   <td> Hillshade_3pm </td>
+   <td> 0 </td>
+   <td> 119 </td>
+   <td> 143 </td>
+   <td> 142.5282628 </td>
+   <td> 168 </td>
+   <td> 254 </td>
+  </tr>
+  <tr>
+   <td> Horizontal_Distance_To_Fire_Points </td>
+   <td> 0 </td>
+   <td> 1024 </td>
+   <td> 1710 </td>
+   <td> 1980.2912263 </td>
+   <td> 2550 </td>
+   <td> 7173 </td>
+  </tr>
+  <tr>
+   <td> Wilderness_Area1 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.4488651 </td>
+   <td> 1 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Wilderness_Area2 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0514344 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Wilderness_Area3 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.4360736 </td>
+   <td> 1 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Wilderness_Area4 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0636269 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type1 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0052168 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type2 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0129515 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type3 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0083010 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type4 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0213352 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type5 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0027487 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type6 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0113165 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type7 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0001807 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type8 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0003081 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type9 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0019741 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type10 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0561675 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type11 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0213593 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type12 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0515841 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type13 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0300011 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type14 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0010310 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type15 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0000052 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type16 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0048966 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type17 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0058897 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type18 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0032684 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type19 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0069207 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type20 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0159360 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type21 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0014423 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type22 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0574394 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type23 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0993990 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type24 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0366223 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type25 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0008158 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type26 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0044560 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type27 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0018692 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type28 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0016282 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type29 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.1983556 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type30 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0519266 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type31 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0441746 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type32 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0903923 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type33 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0777161 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type34 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0027727 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type35 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0032547 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type36 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0002048 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type37 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0005129 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type38 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0268032 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type39 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0237620 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Soil_Type40 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0 </td>
+   <td> 0.0150599 </td>
+   <td> 0 </td>
+   <td> 1 </td>
+  </tr>
+  <tr>
+   <td> Cover_Type </td>
+   <td> 1 </td>
+   <td> 1 </td>
+   <td> 2 </td>
+   <td> 2.0514705 </td>
+   <td> 2 </td>
+   <td> 7 </td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

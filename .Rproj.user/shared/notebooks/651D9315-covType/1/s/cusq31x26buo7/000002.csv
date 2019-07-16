@@ -1,0 +1,10 @@
+"0","knitr::opts_chunk$set(fig.align = ""centre"")"
+"0",""
+"0","library(knitr)"
+"0","library(kableExtra)"
+"0","library(magick)"
+"2","Linking to ImageMagick 6.9.9.39
+Enabled features: cairo, fontconfig, freetype, lcms, pango, rsvg, webp
+Disabled features: fftw, ghostscript, x11
+"
+"0","library(formatR)"

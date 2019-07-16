@@ -1,0 +1,38 @@
+"0","set.seed(1808)
+mod_ranger <- train(x = cov_Vars_Train[-1], y = cov_Vars_Train$Cover_Type,
+                    method = 'ranger',
+                    trControl = control)
+"
+"1","+ Fold01: mtry=2, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","- Fold01: mtry=2, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","+ Fold01: mtry=3, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","- Fold01: mtry=3, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","+ Fold01: mtry=4, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","- Fold01: mtry=4, min.node.size=1, splitrule=gini"
+"1"," "
+"1","
+"
+"1","+ Fold01: mtry=2, min.node.size=1, splitrule=extratrees"
+"1"," "
+"1","
+"
+"2","libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: Error: Empty node.
+libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: Error: Empty node.
+libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: Error: Empty node.
+libc++abi.dylib: terminating with uncaught exception of type std::runtime_error: Error: Empty node.
+"

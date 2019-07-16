@@ -1,0 +1,3 @@
+"0","control <- trainControl(method = 'cv', "
+"0","                        number = 10, # 10 cross-validation folds"
+"0","                        verboseIter = TRUE)"

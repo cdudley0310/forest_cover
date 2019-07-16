@@ -1,0 +1,28 @@
+"0","# get occurences of species in biome; if > 12.5% found in biome, species is 
+# considered to be found in that biome
+(sol %>% 
+  
+  # remove geometry column and convert to tibble
+  st_set_geometry(NULL) %>% 
+  as_tibble() %>% 
+  
+  # count the number of each species found in each biome
+  group_by(clade, biome) %>% 
+  count(species) %>%
+  ungroup() %>% 
+  arrange(clade, species, biome) %>% 
+  
+  # turn counts into percentages of species occurence in each biome
+  group_by(species) %>% 
+  mutate(count = sum(n),
+         n = round(n / sum(n), digits = 3)) %>% 
+  spread(biome, n) %>% 
+  replace(is.na(.), 0) %>% 
+  rename(""humid"" = ""1"", 
+         ""sub-humid"" = ""2"", 
+         ""montane"" = ""3"", 
+         ""dry"" = ""4"", 
+         ""sub-arid"" = ""5""))
+"
+"2","Error in eval(lhs, parent, parent) : object 'sol' not found
+"

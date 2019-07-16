@@ -1,0 +1,11 @@
+"0","py_config()
+"
+"1","python:         /Users/christopherdudley/anaconda3/bin/python
+libpython:      /Users/christopherdudley/anaconda3/lib/libpython3.7m.dylib
+pythonhome:     /Users/christopherdudley/anaconda3:/Users/christopherdudley/anaconda3
+version:        3.7.1 (default, Dec 14 2018, 13:28:58)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+numpy:          /Users/christopherdudley/anaconda3/lib/python3.7/site-packages/numpy
+numpy_version:  1.15.4
+
+NOTE: Python version was forced by use_python function
+"
