@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563317154973.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "378208326",
+    "id" : "F1B8A3A4",
+    "lastKnownWriteTime" : 1563318238,
+    "last_content_update" : 1563318238126,
+    "path" : "~/Library/Mobile Documents/com~apple~CloudDocs/r/forest_cover_type/cov_type.rmd",
+    "project_path" : "cov_type.rmd",
+    "properties" : {
+        "cursorPosition" : "12,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
